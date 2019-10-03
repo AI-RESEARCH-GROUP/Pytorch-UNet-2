@@ -14,9 +14,10 @@ def split_img_into_squares(img):
     return get_square(img, 0), get_square(img, 1)
 
 def hwc_to_chw(img):
+    img.shape
     return np.transpose(img, axes=[2, 0, 1])
 
-def resize_and_crop(pilimg, scale=0.5, final_height=None):
+def resize_and_crop(pilimg, scale=1, final_height=None):
     w = pilimg.size[0]
     h = pilimg.size[1]
     newW = int(w * scale)
@@ -47,7 +48,7 @@ def split_train_val(dataset, val_percent=0.05):
     dataset = list(dataset)
     length = len(dataset)
     n = int(length * val_percent)
-    random.shuffle(dataset)
+    #random.shuffle(dataset)
     return {'train': dataset[:-n], 'val': dataset[-n:]}
 
 
