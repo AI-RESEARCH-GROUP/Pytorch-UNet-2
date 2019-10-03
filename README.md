@@ -1,8 +1,8 @@
 # Pytorch-UNet 2.0 for noisy microarray image segmentation
-![input and output for a random image in the test dataset](303.png) [output file unet2] (303outmaskunet2.png)
+![input and output for a random image in the test dataset](303.png) ![output file unet2] (303outmaskunet2.png)
 
 UNet 2.0 is a modified version of UNet for better segmentation even image is noisy. Below is the pictorial view difference between UNet and UNet 2.0.
-[picutre of unet and unet2](Unet2.png)
+![picutre of unet and unet2](Unet2.png)
 
 This is forked version of https://github.com/milesial/Pytorch-UNet. To know more about it, 
 [Click Here For Original Edition](https://github.com/milesial/Pytorch-UNet) 
