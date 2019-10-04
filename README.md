@@ -1,5 +1,13 @@
 # Pytorch-UNet 2.0 for noisy microarray image segmentation
-![input file](303.png) ![output file unet2](303outmaskunet2.png)
+
+Example results:
+
+Input Image            |  Output Segmentation Image 
+:-------------------------:|:-------------------------:
+![](307.png)  |  ![](307outmaskunet2.png)
+![](313.png)  |  ![](313outmaskunet2.png)
+![](303.png)  |  ![](303outmaskunet2.png)
+
 
 UNet 2.0 is a modified version of UNet for better segmentation even image is noisy. Below is the pictorial view difference between UNet and UNet 2.0.
 ![picutre of unet and unet2](Unet2.png)
@@ -17,6 +25,8 @@ Use checkoutput.py program to check output on your images.
 For training on your images use train2.py. For training, program assumes input image size 512 x 512 which is broken by program into 128 x 128 for training.
 
 There is no limitation of image size on testing/predicting/checking output.
+
+--------below  is as in original version by milesial/Pytorch-UNet
 ### Prediction
 
 You can easily test the output masks on your images via the CLI.
@@ -39,7 +49,7 @@ You can specify which model file to use with `--model MODEL.pth`.
 ### Training
 
 `python train.py -h` should get you started. A proper CLI is yet to be added.
-## Warning
+## Note
 In order to process the image in training phase, every 512x512 input image is split into 16 squares of 128x128  and each square is passed into the net. 
 For testing/predict phase, no size restriction.
 
