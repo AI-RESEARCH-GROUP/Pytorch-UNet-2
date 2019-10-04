@@ -1,5 +1,5 @@
-# Pytorch-UNet 2.0 for noisy microarray image segmentation
-
+# Pytorch-UNet 2.0 for accurate stable image segmentation. Better than UNet for noisy images.
+Presented network is trained for ## microarray images.
 Example results:
 
 Input Image            |  Output Segmentation Image 
